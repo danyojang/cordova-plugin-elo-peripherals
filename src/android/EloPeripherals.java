@@ -1,4 +1,4 @@
-package cordova-plugin-elo-peripherals;
+package EloPeripherals;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
