@@ -19,6 +19,11 @@ public class EloPeripherals extends CordovaPlugin {
             this.coolMethod(message, callbackContext);
             return true;
         }
+		if (action.equals("initialize")) {
+			this.initialize(callbackContext);
+			return true;
+		}
+
         return false;
     }
 
@@ -29,4 +34,9 @@ public class EloPeripherals extends CordovaPlugin {
             callbackContext.error("Expected one non-empty string argument.");
         }
     }
+
+	private void initialize(CallbackContext callbackContext) {
+		ProductInfo productInfo = DeviceManager.getPlatformInfo();
+		int a = 3;
+	}
 }
